@@ -1,82 +1,229 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Técnico Arturo Casanova | Aire acondicionado</title>
-<meta name="description" content="Instalación, mantenimiento y reparación de minisplits en Valladolid, Yucatán y pueblos cercanos.">
+<title>Técnico Arturo Casanova | Aire Acondicionado</title>
+<meta name="description" content="Instalación, mantenimiento y reparación de minisplits en Valladolid, Yucatán.">
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;color:#17243a;background:#fff}
-header{background:#071d36;color:white;padding:22px 7%;display:flex;justify-content:space-between;align-items:center}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:#17243a;line-height:1.6}
+.container{width:90%;max-width:1150px;margin:auto}
+a{text-decoration:none}
+header{background:#071b3b;color:white;padding:18px 0}
+nav{display:flex;justify-content:space-between;align-items:center;gap:15px}
 .logo{font-size:19px;font-weight:bold}
-.logo span{color:#168bff}
-.hero{background:linear-gradient(120deg,#061c38,#087bfa);color:white;padding:85px 8%;text-align:center}
-.hero h1{font-size:clamp(32px,6vw,55px);margin-bottom:18px}
-.hero p{font-size:18px;line-height:1.6;margin-bottom:28px}
-.btn{display:inline-block;background:#fff;color:#075dcc;padding:15px 25px;border-radius:9px;text-decoration:none;font-weight:bold}
-section{padding:65px 8%;text-align:center}
-h2{font-size:30px;margin-bottom:30px}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-.card{padding:30px 20px;border:1px solid #e3eaf3;border-radius:15px;box-shadow:0 5px 20px #102c5010}
-.card .icon{font-size:40px;margin-bottom:15px}
-.card h3{margin-bottom:12px;color:#075dcc}
-.card p{line-height:1.6;color:#596579}
-.location{background:#f1f6fc}
-.contact{background:#071d36;color:white}
-.contact p{margin-bottom:25px;line-height:1.7}
-footer{background:#041326;color:#cbd5e1;padding:22px;text-align:center;font-size:13px}
+.logo span{color:#168cff}
+nav a{color:white;margin-left:15px;font-size:14px}
+.btn{display:inline-block;background:#087cf0;color:white;padding:13px 23px;border-radius:30px;font-weight:bold;margin-top:20px}
+.hero{
+background:linear-gradient(100deg,#06152f,#0b3971);
+color:white;padding:65px 0 0;overflow:hidden
+}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.hero h1{font-size:clamp(36px,5vw,58px);line-height:1.1;margin:15px 0}
+.hero h1 span{color:#50b3ff}
+.hero p{font-size:17px;color:#d8e8fa}
+.hero img{width:100%;max-height:520px;object-fit:contain;object-position:bottom}
+section{padding:75px 0}
+h2{font-size:35px;color:#071b3b;margin-bottom:18px}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.intro img{width:100%;max-height:430px;object-fit:contain;background:#eaf4ff;border-radius:18px}
+.intro p,.description{color:#64748b;margin-bottom:15px}
+.services{background:#f1f6fc}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
+.card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 8px 25px #071b3b15}
+.card img{width:100%;height:220px;object-fit:cover}
+.card-content{padding:22px}
+.card h3{color:#071b3b;margin-bottom:10px}
+.card p{color:#64748b;font-size:14px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px}
+.why{background:#071b3b;color:white}
+.why h2{color:white}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
+.why-card{padding:22px;border:1px solid #ffffff30;border-radius:14px}
+.why-card h3{color:#55b4ff;margin-bottom:10px}
+.why-card p{color:#c7d7e9;font-size:14px}
+.zones{background:#f1f6fc;text-align:center}
+.contact{background:#fff;text-align:center}
+.contact p{color:#64748b;margin:15px 0}
+footer{background:#04142e;color:white;text-align:center;padding:28px}
+.whatsapp{
+position:fixed;right:20px;bottom:20px;
+background:#20bd69;color:white;border-radius:50%;
+width:60px;height:60px;display:flex;
+align-items:center;justify-content:center;
+font-weight:bold;font-size:24px;z-index:99;
+box-shadow:0 5px 20px #0004
+}
+@media(max-width:750px){
+nav{flex-direction:column}
+nav a{margin:5px}
+.hero-grid,.intro{grid-template-columns:1fr}
+.hero-grid>div:first-child{padding:30px 0}
+.hero img{max-height:330px}
+.cards{grid-template-columns:1fr}
+.why-grid{grid-template-columns:1fr 1fr}
+.gallery{grid-template-columns:1fr 1fr}
+h2{font-size:29px}
+}
+@media(max-width:420px){
+.why-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<div class="logo">❄ TÉCNICO <span>ARTURO CASANOVA</span></div>
+<nav class="container">
+<div class="logo">TÉCNICO <span>ARTURO CASANOVA</span></div>
+<div>
+<a href="#inicio">Inicio</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#servicios">Servicios</a>
+<a href="#galeria">Galería</a>
+<a href="#contacto">Contacto</a>
+</div>
+</nav>
 </header>
 
-<div class="hero">
-<h1>Tu clima en buenas manos.</h1>
-<p>Instalación, mantenimiento y reparación de minisplits.<br>
-Servicio en Valladolid, Yucatán y pueblos cercanos.</p>
-<a class="btn" href="#contacto">Solicitar servicio</a>
+<main>
+<section class="hero" id="inicio">
+<div class="container hero-grid">
+<div>
+<p style="color:#55b4ff;font-weight:bold">SERVICIO DE CLIMATIZACIÓN</p>
+<h1>El confort de tu espacio, <span>en manos expertas.</span></h1>
+<p>Instalación, mantenimiento y reparación de minisplits en Valladolid, Yucatán y pueblos cercanos.</p>
+<a class="btn" href="#contacto">SOLICITAR SERVICIO</a>
 </div>
+<img src="images/tecnico-arturo.png" alt="Técnico Arturo Casanova">
+</div>
+</section>
 
-<section>
-<h2>Nuestros servicios</h2>
-<div class="services">
-<div class="card">
-<div class="icon">❄️</div>
-<h3>Instalación</h3>
-<p>Instalación de equipos minisplit para tu hogar o negocio.</p>
-</div>
-<div class="card">
-<div class="icon">🛠️</div>
-<h3>Mantenimiento</h3>
-<p>Limpieza y mantenimiento para el buen funcionamiento de tu equipo.</p>
-</div>
-<div class="card">
-<div class="icon">🔧</div>
-<h3>Reparación</h3>
-<p>Diagnóstico y reparación de fallas en equipos minisplit.</p>
+<section id="nosotros">
+<div class="container intro">
+<img src="images/tecnico-arturo.png" alt="Arturo Casanova">
+<div>
+<p style="color:#087cf0;font-weight:bold">CONÓCENOS</p>
+<h2>Tu técnico de confianza en climatización.</h2>
+<p>Soy Arturo Casanova. Ofrezco servicios de instalación, mantenimiento y reparación de minisplits.</p>
+<p>Atención en Valladolid, Yucatán y pueblos cercanos, para hogares y negocios.</p>
+<a class="btn" href="#contacto">CONTACTAR</a>
 </div>
 </div>
 </section>
 
-<section class="location">
+<section class="services" id="servicios">
+<div class="container">
+<h2>Nuestros servicios</h2>
+<p class="description">Soluciones para tus equipos de aire acondicionado.</p>
+<div class="cards">
+
+<div class="card">
+<img src="images/instalacion-minisplit.jpg" alt="Instalación de minisplit">
+<div class="card-content">
+<h3>Instalación de minisplits</h3>
+<p>Instalación de equipos para hogares y negocios.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/mantenimiento-minisplit.jpg" alt="Mantenimiento de minisplit">
+<div class="card-content">
+<h3>Mantenimiento de minisplits</h3>
+<p>Limpieza y revisión para conservar el buen funcionamiento del equipo.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/reparacion-minisplit.jpg" alt="Reparación de minisplit">
+<div class="card-content">
+<h3>Reparación de minisplits</h3>
+<p>Revisión y reparación de fallas en equipos de aire acondicionado.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="galeria">
+<div class="container">
+<h2>Galería de trabajos realizados</h2>
+<p class="description">Algunos de nuestros trabajos de climatización.</p>
+<div class="gallery">
+<img src="images/trabajo-1.jpg" alt="Trabajo 1">
+<img src="images/trabajo-2.jpg" alt="Trabajo 2">
+<img src="images/trabajo-3.jpg" alt="Trabajo 3">
+<img src="images/trabajo-4.jpg" alt="Trabajo 4">
+<img src="images/trabajo-5.jpg" alt="Trabajo 5">
+<img src="images/tecnico-arturo.png" alt="Técnico Arturo">
+</div>
+</div>
+</section>
+
+<section class="why">
+<div class="container">
+<h2>¿Por qué elegirnos?</h2>
+<div class="why-grid">
+<div class="why-card">
+<h3>Atención directa</h3>
+<p>Comunicación clara para atender tus necesidades.</p>
+</div>
+<div class="why-card">
+<h3>Servicios especializados</h3>
+<p>Instalación, mantenimiento y reparación.</p>
+</div>
+<div class="why-card">
+<h3>Cuidado del equipo</h3>
+<p>Revisión y atención de tus minisplits.</p>
+</div>
+<div class="why-card">
+<h3>Servicio regional</h3>
+<p>Atención en Valladolid y pueblos cercanos.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="zones">
+<div class="container">
 <h2>¿Dónde trabajamos?</h2>
-<p>📍 Valladolid, Yucatán y pueblos cercanos.</p>
+<p>Valladolid, Yucatán y pueblos cercanos.</p>
+<p>Consulta disponibilidad para tu localidad.</p>
+</div>
 </section>
 
 <section class="contact" id="contacto">
+<div class="container">
 <h2>¡Solicita tu servicio!</h2>
-<p>Comunícate directamente con Técnico Arturo Casanova.<br>
-Estamos para atenderte.</p>
-<a class="btn" href="https://wa.me/52XXXXXXXXXX">Contactar por WhatsApp</a>
+<p>¿Necesitas instalar, limpiar o reparar tu minisplit?</p>
+<p><strong>Técnico Arturo Casanova</strong></p>
+<p>Valladolid, Yucatán y pueblos cercanos.</p>
+<p><strong>WhatsApp: +52 985 109 1041</strong></p>
+<a class="btn" href="https://wa.me/529851091041" target="_blank" rel="noopener">
+CONTACTAR POR WHATSAPP
+</a>
+</div>
 </section>
+</main>
 
 <footer>
-© 2026 Técnico Arturo Casanova · Todos los derechos reservados.
+Técnico Arturo Casanova<br>
+Valladolid, Yucatán<br>
+© <span id="year"></span> Todos los derechos reservados.
 </footer>
+
+<a class="whatsapp" href="https://wa.me/529851091041" target="_blank" rel="noopener" aria-label="WhatsApp">W</a>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
 
 </body>
 </html>
