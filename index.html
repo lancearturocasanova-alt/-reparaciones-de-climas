@@ -1,229 +1,554 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Técnico Arturo Casanova | Aire Acondicionado</title>
-<meta name="description" content="Instalación, mantenimiento y reparación de minisplits en Valladolid, Yucatán.">
-
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071b36">
+<meta name="description" content="Instalación, mantenimiento y reparación de minisplits en Valladolid, Yucatán y pueblos cercanos. Técnico Arturo Casanova.">
+<title>Técnico Arturo Casanova | Aire acondicionado</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;color:#17243a;line-height:1.6}
-.container{width:90%;max-width:1150px;margin:auto}
-a{text-decoration:none}
-header{background:#071b3b;color:white;padding:18px 0}
-nav{display:flex;justify-content:space-between;align-items:center;gap:15px}
-.logo{font-size:19px;font-weight:bold}
-.logo span{color:#168cff}
-nav a{color:white;margin-left:15px;font-size:14px}
-.btn{display:inline-block;background:#087cf0;color:white;padding:13px 23px;border-radius:30px;font-weight:bold;margin-top:20px}
-.hero{
-background:linear-gradient(100deg,#06152f,#0b3971);
-color:white;padding:65px 0 0;overflow:hidden
-}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center}
-.hero h1{font-size:clamp(36px,5vw,58px);line-height:1.1;margin:15px 0}
-.hero h1 span{color:#50b3ff}
-.hero p{font-size:17px;color:#d8e8fa}
-.hero img{width:100%;max-height:520px;object-fit:contain;object-position:bottom}
-section{padding:75px 0}
-h2{font-size:35px;color:#071b3b;margin-bottom:18px}
-.intro{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.intro img{width:100%;max-height:430px;object-fit:contain;background:#eaf4ff;border-radius:18px}
-.intro p,.description{color:#64748b;margin-bottom:15px}
-.services{background:#f1f6fc}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
-.card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 8px 25px #071b3b15}
-.card img{width:100%;height:220px;object-fit:cover}
-.card-content{padding:22px}
-.card h3{color:#071b3b;margin-bottom:10px}
-.card p{color:#64748b;font-size:14px}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}
-.gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px}
-.why{background:#071b3b;color:white}
-.why h2{color:white}
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
-.why-card{padding:22px;border:1px solid #ffffff30;border-radius:14px}
-.why-card h3{color:#55b4ff;margin-bottom:10px}
-.why-card p{color:#c7d7e9;font-size:14px}
-.zones{background:#f1f6fc;text-align:center}
-.contact{background:#fff;text-align:center}
-.contact p{color:#64748b;margin:15px 0}
-footer{background:#04142e;color:white;text-align:center;padding:28px}
-.whatsapp{
-position:fixed;right:20px;bottom:20px;
-background:#20bd69;color:white;border-radius:50%;
-width:60px;height:60px;display:flex;
-align-items:center;justify-content:center;
-font-weight:bold;font-size:24px;z-index:99;
-box-shadow:0 5px 20px #0004
-}
-@media(max-width:750px){
-nav{flex-direction:column}
-nav a{margin:5px}
-.hero-grid,.intro{grid-template-columns:1fr}
-.hero-grid>div:first-child{padding:30px 0}
-.hero img{max-height:330px}
-.cards{grid-template-columns:1fr}
-.why-grid{grid-template-columns:1fr 1fr}
-.gallery{grid-template-columns:1fr 1fr}
-h2{font-size:29px}
-}
-@media(max-width:420px){
-.why-grid{grid-template-columns:1fr}
-}
+:root{--navy:#071b36;--blue:#087cf0;--sky:#eaf5ff;--ink:#12233b;--muted:#62738a;--white:#fff;--line:#dce8f4;--shadow:0 18px 50px rgba(7,27,54,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(1120px,92%);margin:auto}.topbar{background:#041226;color:#dcecff;font-size:13px;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:850;color:var(--navy);line-height:1.1}.brandmark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#087cf0,#39b9ff);display:grid;place-items:center;color:white;font-size:23px}.brand small{display:block;color:var(--muted);font-size:11px;font-weight:650;letter-spacing:.08em;text-transform:uppercase;margin-top:4px}.links{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:700}.links a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 21px;font-weight:800;font-size:14px;background:var(--blue);color:white;box-shadow:0 9px 22px #087cf033;transition:.2s;cursor:pointer}.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}.btn.dark{background:var(--navy);box-shadow:none}.btn.light{background:white;color:var(--navy);box-shadow:none}.hero{background:radial-gradient(circle at 80% 20%,#164e85 0,#0b2a4e 35%,#06172d 75%);color:white;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:500px;height:500px;border:1px solid #ffffff18;border-radius:50%;right:-120px;top:-180px;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff05}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:35px;padding:76px 0 65px;min-height:560px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#a8d8ff;font-size:12px;font-weight:850;letter-spacing:.14em;text-transform:uppercase}.eyebrow:before{content:"";width:24px;height:2px;background:#35a8ff}.hero h1{font-size:clamp(38px,5vw,62px);line-height:1.05;letter-spacing:-.04em;margin:18px 0}.hero h1 span{color:#61c1ff}.hero p{color:#d0e3f7;font-size:17px;max-width:560px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.trust{display:flex;gap:20px;flex-wrap:wrap;margin-top:30px;color:#c3d8ec;font-size:13px}.trust span{display:flex;align-items:center;gap:7px}.hero-photo{height:440px;position:relative;display:flex;align-items:end;justify-content:center}.hero-photo .halo{position:absolute;bottom:0;width:min(420px,100%);height:390px;border-radius:48% 48% 24px 24px;background:linear-gradient(145deg,#1b9bff,#dff4ff);opacity:.95}.hero-photo img{position:relative;z-index:1;height:100%;width:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 20px 25px #0005)}.hero-note{position:absolute;z-index:2;bottom:22px;left:0;background:white;color:var(--navy);padding:13px 17px;border-radius:15px;box-shadow:var(--shadow);font-weight:800;font-size:13px}.hero-note small{display:block;color:var(--muted);font-weight:600}.section{padding:82px 0}.section.soft{background:#f4f9ff}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}.kicker{color:var(--blue);font-size:12px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}.section h2{font-size:clamp(29px,4vw,42px);line-height:1.12;letter-spacing:-.035em;color:var(--navy);margin:10px 0 13px}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.service{background:white;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 8px 25px #0b2a4e09;transition:.2s}.service:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.service img{height:205px;width:100%;object-fit:cover}.service-body{padding:23px}.service-icon{width:42px;height:42px;border-radius:13px;background:var(--sky);display:grid;place-items:center;font-size:21px;margin-top:-44px;position:relative;border:4px solid white}.service h3{color:var(--navy);margin:14px 0 7px;font-size:20px}.service p{color:var(--muted);font-size:14px;margin:0 0 17px}.text-link{color:var(--blue);font-weight:850;font-size:13px}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.about-pics{position:relative;min-height:440px}.about-pics .big{position:absolute;inset:0 55px 35px 0;width:calc(100% - 55px);height:405px;object-fit:cover;border-radius:24px}.about-pics .small{position:absolute;right:0;bottom:0;width:48%;height:190px;object-fit:cover;border:8px solid white;border-radius:22px;box-shadow:var(--shadow)}.about-copy p{color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}.checks span{font-weight:750;font-size:14px;color:var(--navy)}.checks span:before{content:"✓";display:inline-grid;place-items:center;background:#e1f5ed;color:#09935f;border-radius:50%;width:22px;height:22px;margin-right:8px}.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:190px 190px;gap:14px}.gallery img{width:100%;height:100%;object-fit:cover;border-radius:18px}.gallery img:first-child{grid-row:span 2}.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.why{padding:22px;border:1px solid var(--line);border-radius:18px;background:white}.why b{display:block;color:var(--navy);margin:12px 0 5px}.why p{font-size:13px;color:var(--muted);margin:0}.why .ico{font-size:26px}.zone{background:linear-gradient(110deg,#071b36eF,#0b3c6ee8),url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80') center/cover;color:white;border-radius:26px;padding:44px;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center}.zone h2{color:white;margin:0 0 10px}.zone p{color:#d7e9fa;margin:0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}.contact-card{background:var(--navy);color:white;border-radius:24px;padding:34px}.contact-card h2{color:white}.contact-card p{color:#d2e3f4}.contact-photo{width:100%;height:100%;min-height:330px;object-fit:cover;border-radius:24px}.contact-item{display:flex;align-items:center;gap:12px;margin:18px 0;color:#e1efff}.contact-item b{display:block;color:white}.footer{background:#041226;color:#c2d3e5;padding:30px 0;font-size:13px}.footer .container{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.wa-float{position:fixed;right:20px;bottom:20px;z-index:30;background:#18bd69;color:white;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;font-size:28px;box-shadow:0 12px 30px #0003}.mobile-cta{display:none}
+@media(max-width:850px){.links{display:none}.hero-grid{grid-template-columns:1fr;padding:55px 0 25px;text-align:center}.hero p{margin:auto}.hero-actions,.trust{justify-content:center}.hero-photo{height:360px;max-width:440px;width:100%;margin:auto}.hero-photo .halo{height:320px}.about-grid{grid-template-columns:1fr;gap:30px}.about-pics{min-height:360px}.about-pics .big{height:330px}.cards{grid-template-columns:1fr 1fr}.why-grid{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr}.contact-photo{max-height:320px}.zone{grid-template-columns:1fr;text-align:center}.zone .btn{justify-self:center}}
+@media(max-width:560px){.topbar .container{justify-content:center}.navin{height:66px}.brand{font-size:14px}.brandmark{width:38px;height:38px}.navin>.btn{padding:10px 13px;font-size:12px}.hero h1{font-size:39px}.hero-grid{padding-top:45px}.hero-photo{height:310px}.hero-photo .halo{height:275px}.section{padding:62px 0}.cards{grid-template-columns:1fr}.service img{height:220px}.checks{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:160px 160px 160px}.gallery img:first-child{grid-row:auto;grid-column:span 2}.why-grid{grid-template-columns:1fr 1fr}.why{padding:17px}.zone{padding:28px 22px}.contact-card{padding:25px}.footer .container{justify-content:center;text-align:center}.wa-float{width:54px;height:54px;right:14px;bottom:14px}}
 </style>
 </head>
-
 <body>
-
-<header>
-<nav class="container">
-<div class="logo">TÉCNICO <span>ARTURO CASANOVA</span></div>
-<div>
-<a href="#inicio">Inicio</a>
-<a href="#nosotros">Nosotros</a>
-<a href="#servicios">Servicios</a>
-<a href="#galeria">Galería</a>
-<a href="#contacto">Contacto</a>
-</div>
-</nav>
-</header>
-
+<div class="topbar"><div class="container"><span>❄️ Servicio de aire acondicionado</span><span>📍 Valladolid, Yucatán y pueblos cercanos</span></div></div>
+<header class="nav"><div class="container navin"><a class="brand" href="#inicio"><span class="brandmark">❄</span><span>TÉCNICO ARTURO CASANOVA<small>Aire acondicionado</small></span></a><nav class="links"><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a></nav><a class="btn" href="https://wa.me/529851091041?text=Hola%2C%20T%C3%A9cnico%20Arturo.%20Quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener">WhatsApp ↗</a></div></header>
 <main>
-<section class="hero" id="inicio">
-<div class="container hero-grid">
-<div>
-<p style="color:#55b4ff;font-weight:bold">SERVICIO DE CLIMATIZACIÓN</p>
-<h1>El confort de tu espacio, <span>en manos expertas.</span></h1>
-<p>Instalación, mantenimiento y reparación de minisplits en Valladolid, Yucatán y pueblos cercanos.</p>
-<a class="btn" href="#contacto">SOLICITAR SERVICIO</a>
-</div>
-<img src="images/tecnico-arturo.png" alt="Técnico Arturo Casanova">
-</div>
-</section>
+<section class="hero" id="inicio"><div class="container hero-grid"><div><span class="eyebrow">Confort para tu hogar y negocio</span><h1>Tu clima ideal, con un servicio <span>de confianza.</span></h1><p>Instalación, mantenimiento y reparación de minisplits en Valladolid, Yucatán y comunidades cercanas.</p><div class="hero-actions"><a class="btn" href="https://wa.me/529851091041?text=Hola%2C%20Arturo.%20Quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20aire%20acondicionado." target="_blank" rel="noopener">💬 Solicitar cotización</a><a class="btn light" href="#servicios">Ver servicios ↓</a></div><div class="trust"><span>✓ Atención directa</span><span>✓ Servicio a domicilio</span><span>✓ Valladolid y alrededores</span></div></div><div class="hero-photo"><div class="halo"></div><img src="data:image/jpeg;base64,<!-- ==============================
+     PARTE 2 - ESTILOS Y FUNCIONES
+     TECNICO ARTURO CASANOVA
+================================ -->
 
-<section id="nosotros">
-<div class="container intro">
-<img src="images/tecnico-arturo.png" alt="Arturo Casanova">
-<div>
-<p style="color:#087cf0;font-weight:bold">CONÓCENOS</p>
-<h2>Tu técnico de confianza en climatización.</h2>
-<p>Soy Arturo Casanova. Ofrezco servicios de instalación, mantenimiento y reparación de minisplits.</p>
-<p>Atención en Valladolid, Yucatán y pueblos cercanos, para hogares y negocios.</p>
-<a class="btn" href="#contacto">CONTACTAR</a>
-</div>
-</div>
-</section>
+<style>
+/* EFECTOS Y ANIMACIONES */
+html {
+  scroll-behavior: smooth;
+}
 
-<section class="services" id="servicios">
-<div class="container">
-<h2>Nuestros servicios</h2>
-<p class="description">Soluciones para tus equipos de aire acondicionado.</p>
-<div class="cards">
+section {
+  scroll-margin-top: 90px;
+}
 
-<div class="card">
-<img src="images/instalacion-minisplit.jpg" alt="Instalación de minisplit">
-<div class="card-content">
-<h3>Instalación de minisplits</h3>
-<p>Instalación de equipos para hogares y negocios.</p>
-</div>
-</div>
+.gallery img,
+.service-card img {
+  transition: transform .4s ease;
+}
 
-<div class="card">
-<img src="images/mantenimiento-minisplit.jpg" alt="Mantenimiento de minisplit">
-<div class="card-content">
-<h3>Mantenimiento de minisplits</h3>
-<p>Limpieza y revisión para conservar el buen funcionamiento del equipo.</p>
-</div>
-</div>
+.gallery img:hover,
+.service-card img:hover {
+  transform: scale(1.04);
+}
 
-<div class="card">
-<img src="images/reparacion-minisplit.jpg" alt="Reparación de minisplit">
-<div class="card-content">
-<h3>Reparación de minisplits</h3>
-<p>Revisión y reparación de fallas en equipos de aire acondicionado.</p>
-</div>
-</div>
+.btn-whatsapp {
+  display: inline-block;
+  background: #20c763;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s;
+}
 
-</div>
-</div>
-</section>
+.btn-whatsapp:hover {
+  background: #159b4a;
+  transform: translateY(-3px);
+}
 
-<section id="galeria">
-<div class="container">
-<h2>Galería de trabajos realizados</h2>
-<p class="description">Algunos de nuestros trabajos de climatización.</p>
-<div class="gallery">
-<img src="images/trabajo-1.jpg" alt="Trabajo 1">
-<img src="images/trabajo-2.jpg" alt="Trabajo 2">
-<img src="images/trabajo-3.jpg" alt="Trabajo 3">
-<img src="images/trabajo-4.jpg" alt="Trabajo 4">
-<img src="images/trabajo-5.jpg" alt="Trabajo 5">
-<img src="images/tecnico-arturo.png" alt="Técnico Arturo">
-</div>
-</div>
-</section>
+/* TARJETAS DE SERVICIOS */
+.service-card {
+  overflow: hidden;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 5px 20px rgba(0,0,0,.10);
+}
 
-<section class="why">
-<div class="container">
-<h2>¿Por qué elegirnos?</h2>
-<div class="why-grid">
-<div class="why-card">
-<h3>Atención directa</h3>
-<p>Comunicación clara para atender tus necesidades.</p>
-</div>
-<div class="why-card">
-<h3>Servicios especializados</h3>
-<p>Instalación, mantenimiento y reparación.</p>
-</div>
-<div class="why-card">
-<h3>Cuidado del equipo</h3>
-<p>Revisión y atención de tus minisplits.</p>
-</div>
-<div class="why-card">
-<h3>Servicio regional</h3>
-<p>Atención en Valladolid y pueblos cercanos.</p>
-</div>
-</div>
-</div>
-</section>
+.service-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
 
-<section class="zones">
-<div class="container">
-<h2>¿Dónde trabajamos?</h2>
-<p>Valladolid, Yucatán y pueblos cercanos.</p>
-<p>Consulta disponibilidad para tu localidad.</p>
-</div>
-</section>
+/* GALERÍA */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 18px;
+}
 
-<section class="contact" id="contacto">
-<div class="container">
-<h2>¡Solicita tu servicio!</h2>
-<p>¿Necesitas instalar, limpiar o reparar tu minisplit?</p>
-<p><strong>Técnico Arturo Casanova</strong></p>
-<p>Valladolid, Yucatán y pueblos cercanos.</p>
-<p><strong>WhatsApp: +52 985 109 1041</strong></p>
-<a class="btn" href="https://wa.me/529851091041" target="_blank" rel="noopener">
-CONTACTAR POR WHATSAPP
-</a>
-</div>
-</section>
-</main>
+.gallery img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+}
 
-<footer>
-Técnico Arturo Casanova<br>
-Valladolid, Yucatán<br>
-© <span id="year"></span> Todos los derechos reservados.
-</footer>
+/* BOTÓN WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 22px;
+  right: 20px;
+  z-index: 9999;
+  background: #25D366;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0,0,0,.25);
+}
 
-<a class="whatsapp" href="https://wa.me/529851091041" target="_blank" rel="noopener" aria-label="WhatsApp">W</a>
+/* DISEÑO PARA CELULAR */
+@media(max-width:600px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery img {
+    height: 150px;
+  }
+
+  .btn-whatsapp {
+    padding: 12px 18px;
+  }
+}
+</style>
 
 <script>
-document.getElementById("year").textContent=new Date().getFullYear();
+/* WHATSAPP CON MENSAJES AUTOMÁTICOS */
+const numeroTecnico = "529851091041";
+
+function contactarTecnico(servicio) {
+  const mensaje =
+    "Hola, Arturo. Me interesa información sobre: " +
+    servicio +
+    ". ¿Me puedes dar información y cotización?";
+
+  const enlace =
+    "https://wa.me/" +
+    numeroTecnico +
+    "?text=" +
+    encodeURIComponent(mensaje);
+
+  window.open(enlace, "_blank");
+}
+
+/* ANIMACIÓN AL DESPLAZARSE */
+document.querySelectorAll("section").forEach(seccion => {
+  seccion.style.transition = "opacity .6s ease";
+});
+
+/* AÑO AUTOMÁTICO */
+const elementoAnio = document.getElementById("year");
+
+if (elementoAnio) {
+  elementoAnio.textContent = new Date().getFullYear();
+}
 </script>
 
-</body>
-</html>
+<!-- FIN DE LA PARTE 2 --><!-- =================================
+     PARTE 3 - CONTACTO Y UBICACION
+     TECNICO ARTURO CASANOVA
+================================= -->
+
+<section id="contacto" style="
+padding:60px 20px;
+background:#101827;
+color:white;
+text-align:center;
+">
+
+<h2>¡Solicita tu servicio!</h2>
+
+<p>
+¿Necesitas un técnico profesional?
+Arturo Casanova está listo para ayudarte.
+</p>
+
+<a href="https://wa.me/529851091041?text=Hola%20Arturo%2C%20quiero%20solicitar%20una%20cotizacion"
+class="btn-whatsapp">
+📲 SOLICITAR COTIZACIÓN
+</a>
+
+<p style="margin-top:25px;">
+📞 Teléfono: +52 985 109 1041
+</p>
+
+</section>
+
+
+<!-- PREGUNTAS FRECUENTES -->
+
+<section style="padding:50px 20px;background:#f4f6f9;">
+
+<h2 style="text-align:center;color:#101827;">
+Preguntas frecuentes
+</h2>
+
+<details style="padding:15px;background:white;margin:12px;border-radius:10px;">
+<summary>¿Cómo puedo solicitar un servicio?</summary>
+<p>Envíanos un mensaje por WhatsApp para recibir atención.</p>
+</details>
+
+<details style="padding:15px;background:white;margin:12px;border-radius:10px;">
+<summary>¿Puedo pedir una cotización?</summary>
+<p>¡Claro! Escríbenos y cuéntanos qué servicio necesitas.</p>
+</details>
+
+<details style="padding:15px;background:white;margin:12px;border-radius:10px;">
+<summary>¿Cómo puedo comunicarme con Arturo?</summary>
+<p>Puedes contactarlo directamente por WhatsApp.</p>
+</details>
+
+</section>
+
+
+<!-- UBICACIÓN -->
+
+<section style="
+padding:50px 20px;
+text-align:center;
+background:white;
+">
+
+<h2>Contáctanos</h2>
+
+<p>Atención personalizada por WhatsApp.</p>
+
+<a href="https://wa.me/529851091041?text=Hola%20Arturo%2C%20quiero%20informacion"
+class="btn-whatsapp">
+HABLAR POR WHATSAPP
+</a>
+
+</section>
+
+
+<!-- PIE DE PAGINA -->
+
+<footer style="
+background:#080e19;
+color:white;
+padding:25px;
+text-align:center;
+">
+
+<h3>Arturo Casanova</h3>
+
+<p>Servicio técnico profesional</p>
+
+<p>WhatsApp: +52 985 109 1041</p>
+
+<p>
+© <span id="year"></span> Todos los derechos reservados.
+</p>
+
+</footer>
+
+
+<!-- BOTÓN FLOTANTE -->
+
+<a href="https://wa.me/529851091041?text=Hola%20Arturo%2C%20necesito%20un%20servicio"
+class="whatsapp-float">
+💬 WhatsApp
+</a>
+
+<!-- FIN PARTE 3 --><!-- ==============================
+     PARTE 4 - EFECTOS PROFESIONALES
+================================ -->
+
+<style>
+
+/* BOTÓN SUBIR */
+#btnSubir {
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  background: #101827;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  z-index: 9998;
+}
+
+/* ANIMACIONES */
+.animar {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all .8s ease;
+}
+
+.animar.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* EFECTO EN BOTONES */
+button, a {
+  transition: all .3s ease;
+}
+
+button:hover {
+  transform: scale(1.04);
+}
+
+/* TARJETAS */
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px rgba(0,0,0,.15);
+}
+
+</style>
+
+<button id="btnSubir" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+↑
+</button>
+
+<script>
+
+/* MOSTRAR BOTÓN SUBIR */
+window.addEventListener("scroll", function() {
+  const boton = document.getElementById("btnSubir");
+
+  if (boton) {
+    boton.style.display =
+      window.scrollY > 300 ? "block" : "none";
+  }
+});
+
+/* ANIMAR ELEMENTOS */
+const observador = new IntersectionObserver(function(entradas) {
+  entradas.forEach(function(entrada) {
+    if (entrada.isIntersecting) {
+      entrada.target.classList.add("visible");
+    }
+  });
+});
+
+document.querySelectorAll(
+  "section h2, .service-card, .gallery img"
+).forEach(function(elemento) {
+  elemento.classList.add("animar");
+  observador.observe(elemento);
+});
+
+</script>
+
+<!-- FIN PARTE 4 --><!-- ==============================
+     PARTE 5 - CLIENTES Y TRABAJOS
+================================ -->
+
+<style>
+.testimonios {
+  padding: 55px 20px;
+  background: #eef2f7;
+  text-align: center;
+}
+
+.testimonio-card {
+  background: white;
+  padding: 25px;
+  margin: 15px auto;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(0,0,0,.08);
+}
+
+.testimonio-card .estrellas {
+  color: #f5a623;
+  font-size: 22px;
+}
+
+.trabajos {
+  padding: 55px 20px;
+  text-align: center;
+  background: white;
+}
+
+.trabajos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 18px;
+}
+
+.trabajos-grid img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+</style>
+
+<!-- TESTIMONIOS -->
+
+<section class="testimonios" id="opiniones">
+
+<h2>Opiniones de nuestros clientes</h2>
+
+<div class="testimonio-card">
+  <div class="estrellas">★★★★★</div>
+  <p>"Excelente atención y servicio."</p>
+  <strong>Cliente satisfecho</strong>
+</div>
+
+<div class="testimonio-card">
+  <div class="estrellas">★★★★★</div>
+  <p>"Muy buena atención, lo recomiendo."</p>
+  <strong>Cliente satisfecho</strong>
+</div>
+
+<div class="testimonio-card">
+  <div class="estrellas">★★★★★</div>
+  <p>"Me brindó información y atención."</p>
+  <strong>Cliente satisfecho</strong>
+</div>
+
+</section>
+
+<!-- TRABAJOS REALIZADOS -->
+
+<section class="trabajos" id="trabajos">
+
+<h2>Trabajos realizados</h2>
+
+<p>Conoce algunos ejemplos de trabajos y servicios técnicos.</p>
+
+<div class="trabajos-grid">
+
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600"
+alt="Trabajo técnico">
+
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600"
+alt="Servicio profesional">
+
+<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600"
+alt="Trabajo de mantenimiento">
+
+</div>
+
+<br>
+
+<a class="btn-whatsapp"
+href="https://wa.me/529851091041?text=Hola%20Arturo%2C%20quiero%20ver%20sus%20servicios">
+SOLICITAR INFORMACIÓN
+</a>
+
+</section>
+
+<!-- FIN PARTE 5 --><!-- ==============================
+     PARTE 6 - SERVICIOS DESTACADOS
+================================ -->
+
+<style>
+.servicios-extra {
+  padding: 60px 20px;
+  background: #101827;
+  color: white;
+  text-align: center;
+}
+
+.servicios-extra h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.servicios-extra .subtitulo {
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+.servicios-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.servicio-extra-card {
+  background: white;
+  color: #172033;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 8px 25px rgba(0,0,0,.2);
+}
+
+.servicio-extra-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.servicio-extra-card .contenido {
+  padding: 20px;
+}
+
+.servicio-extra-card h3 {
+  margin-top: 0;
+}
+
+.servicio-extra-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.servicio-extra-card a {
+  display: inline-block;
+  background: #20c763;
+  color: white;
+  padding: 11px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+</style>
+
+<section class="servicios-extra" id="servicios-destacados">
+
+<h2>Nuestros servicios</h2>
+
+<p class="subtitulo">
+Atención profesional y personalizada.
+</p>
+
+<div class="servicios-contenedor">
+
+<div class="servicio-extra-card">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600" alt="Servicio técnico">
+<div class="contenido">
+<h3>Servicio técnico</h3>
+<p>Atención y asesoría para tus necesidades técnicas.</p>
+<a href="https://wa.me/529851091041?text=Hola%20Arturo%2C%20quiero%20informacion%20sobre%20servicio%20tecnico">Consultar</a>
+</div>
+</div>
+
+<div class="servicio-extra-card">
+<img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=600" alt="Instalaciones">
+<div class="contenido">
+<h3>Instalaciones</h3>
+<p>Consulta disponibilidad y costos para instalaciones.</p>
+<a href="https://wa.me/529851091041?text=Hola%20Arturo%2C%20quiero%20informacion%20sobre%20instalaciones">Consultar</a>
+</div>
+</div>
+
+<div class="servicio-extra-card">
+<img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600" alt="Mantenimiento">
+<div class="contenido">
+<h3>Mantenimiento</h3>
+<p>Solicita información sobre mantenimiento y revisión.</p>
+<a href="https://wa.me/529851091041?text=Hola%20Arturo%2C%20quiero%20informacion%20sobre%20mantenimiento">Consultar</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- FIN PARTE 6 -->
